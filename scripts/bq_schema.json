@@ -1,0 +1,80 @@
+[
+  {
+    "name": "ts",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED",
+    "description": "Timestamp of decision execution"
+  },
+  {
+    "name": "request_id",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Unique pipeline request ID"
+  },
+  {
+    "name": "decision",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Name of Jev decision stage (resolve, hop, goal)"
+  },
+  {
+    "name": "label_id",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Winning label ID (e.g. c0, c1, none)"
+  },
+  {
+    "name": "p",
+    "type": "FLOAT",
+    "mode": "REQUIRED",
+    "description": "Probability of winning label / noul probability"
+  },
+  {
+    "name": "probs",
+    "type": "JSON",
+    "mode": "NULLABLE",
+    "description": "Full probability distribution JSON"
+  },
+  {
+    "name": "model_version",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Jev model version used"
+  },
+  {
+    "name": "latency_ms",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Execution latency in milliseconds"
+  },
+  {
+    "name": "mode",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Pipeline execution mode (off, shadow, live)"
+  },
+  {
+    "name": "tau",
+    "type": "FLOAT",
+    "mode": "REQUIRED",
+    "description": "Threshold applied to decision"
+  },
+  {
+    "name": "outcome",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Outcome status (accept, escalate, fallback)"
+  },
+  {
+    "name": "escalated_to",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Escalation target (none, llm, human)"
+  },
+  {
+    "name": "env",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Environment name (dev, staging, prod)"
+  }
+]

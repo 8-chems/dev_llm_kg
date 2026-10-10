@@ -1,0 +1,10 @@
+{
+  "resolve": 0.85,
+  "hop": 0.8,
+  "goal": 0.8,
+  "ground": 0.9,
+  "dedupe": 0.9,
+  "model_version": "jev-1.13",
+  "dataset_hash": "dev_ece_0.1200",
+  "date": "2026-10-03"
+}

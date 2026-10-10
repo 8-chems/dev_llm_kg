@@ -1,0 +1,17 @@
+fastapi
+fastapi
+uvicorn[standard]
+neo4j
+typesafe-sdk
+anthropic
+pydantic
+pydantic-settings
+python-dotenv
+asyncio
+uv
+pytest
+pytest-asyncio
+python-multipart
+opentelemetry-sdk
+opentelemetry-api
+opentelemetry-exporter-jaeger
